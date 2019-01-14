@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorActivityBackground"
+    tools:context="com.project.dayshedule.dayshedule.Dishes.DishesComponentAddActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dishComponentAdd_headerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nazwa Dania"
+        android:gravity="center"
+        android:background="@drawable/item_gradient_list"
+        android:textColor="@color/colorTextWhite"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/dishComponentAdd_groceriesList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/dishesComponentAdd_quantityBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/item_gradient_list"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/dishComponentAdd_groceresName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Nazwa składnika"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorTextWhite"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Podaj ilość:"
+                    android:textSize="15sp"
+                    android:gravity="bottom|right"/>
+
+                <EditText
+                    android:id="@+id/dishComponentAdd_editQuantity"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:gravity="bottom"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="kg"
+                    android:gravity="bottom|left"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/dishComponentAdd_btnSaveComponent"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:text="Dodaj składnik"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button"
+                    android:onClick="saveNewComponent"/>
+
+                <Button
+                    android:id="@+id/dishComponentAdd_btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:text="Anuluj"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button"
+                    android:onClick="thisClose"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

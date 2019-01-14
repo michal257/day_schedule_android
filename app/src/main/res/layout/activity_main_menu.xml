@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.dayshedule.dayshedule.MainMenuActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="Menu główne"
+        />
+
+    <Button
+        android:id="@+id/btnOpenGroceriesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:onClick="openGroceriesList"
+        android:text="Produkty Spożywcze"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnOpenDishesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnOpenGroceriesList"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:onClick="openDishesList"
+        android:text="Dania (Potrawy)"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnOpenShoppingList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnOpenDishesList"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:onClick="openDishesList"
+        android:text="Zakupy"
+        android:textSize="16sp" />
+
+</RelativeLayout>

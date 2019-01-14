@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorActivityBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/dishDescription_editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tutaj możesz wpisać opis dania..."
+            android:background="@drawable/item_gradient_list"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textColor="@color/colorTextWhite"/>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/dishDescription_btnSaveSescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zapisz opis"
+        android:background="@drawable/button"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

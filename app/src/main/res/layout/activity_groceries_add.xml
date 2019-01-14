@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#81C784"
+    android:gravity="center"
+    tools:context="com.project.dayshedule.dayshedule.Groceries.GroceriesAddActivity">
+
+
+    <TextView
+        android:id="@+id/groceriesAdd_textView_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dodaj nowy produkt"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="#FFF"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/groceriesAdd_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:text="Podaj nazwę produktu:"
+        android:layout_below="@+id/groceriesAdd_textView_header"/>
+
+    <EditText
+        android:id="@+id/groceriesAdd_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/groceriesAdd_textView"/>
+
+    <Button
+        android:id="@+id/groceriesAdd_btnSelectCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groceriesAdd_editText"
+        android:textSize="16sp"
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Wybierz kategorię"
+        android:onClick="btnSelectCategory"/>
+
+    <Button
+        android:id="@+id/groceriesAdd_btnAddGroceries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groceriesAdd_btnSelectCategory"
+        android:textSize="16sp"
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Dodaj produkt"
+        android:onClick="btnAddEditGroceries"/>
+
+
+</RelativeLayout>

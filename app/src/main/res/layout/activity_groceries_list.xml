@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#81C784"
+    tools:context="com.project.dayshedule.dayshedule.Groceries.GroceriesListActivity">
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/btn_groceriesList_addGroceries"
+    android:text="Dodaj nowy produkt"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/button"
+    android:onClick="btnAddGroc"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/btn_groceriesList_goToCategory"
+        android:text="kategorie spożywcze"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:onClick="btnGroceriesCategoryList"
+        android:layout_below="@id/btn_groceriesList_addGroceries"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView_groceries"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/btn_groceriesList_goToCategory"
+        android:layout_marginRight="10dp"
+        android:dividerHeight="15dp"
+        >
+
+    </ListView>
+
+</RelativeLayout>

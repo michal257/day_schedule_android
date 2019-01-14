@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.dayshedule.dayshedule.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="LOGOWANIE"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login:"/>
+
+    <EditText
+        android:id="@+id/etext_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_login_login"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_login_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasło:"
+        android:layout_below="@id/etext_login_login"/>
+
+    <EditText
+        android:id="@+id/etext_login_pass"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_login_pass"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etext_login_pass"
+        android:text="ZAlOGUJ"
+        android:background="@drawable/button"
+        android:onClick="Login"/>
+
+    <TextView
+        android:id="@+id/text_login_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login_login"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:textColor="#ff0000"
+        android:text="Podano nie prawidłowy login lub hasło"/>
+
+</RelativeLayout>
